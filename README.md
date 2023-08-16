@@ -142,3 +142,8 @@ php artisan db:seed
 We have created Adminstrator and Guest user accounts
 
 Adminstrator have full access to dashboard when Guest user can only view books tab in the admin dashboard.
+
+## Quick video examples of dashboard
+
+[Admin Dashboard Video](https://drive.google.com/file/d/1zgofK-fONS4rVuWu4ae2WccOiQa1Lpc5/view?usp=drive_link).
+[Guest Dashboard Video](https://drive.google.com/file/d/1R9VxE_sV7GbCPLyhz0XhGetp7bCGwgYD/view?usp=sharing).
