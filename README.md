@@ -136,3 +136,9 @@ php artisan db:seed
 -   Keep your Laravel project and Filament package updated to the latest versions.
 
 -   Feel free to customize and elaborate on each step based on your specific deployment process.
+
+## For Testing Purposes
+
+We have created Adminstrator and Guest user accounts
+
+Adminstrator have full access to dashboard when Guest user can only view books tab in the admin dashboard.
