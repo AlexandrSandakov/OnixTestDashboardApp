@@ -11,13 +11,13 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+-   [Simple, fast routing engine](https://laravel.com/docs/routing).
+-   [Powerful dependency injection container](https://laravel.com/docs/container).
+-   Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+-   Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+-   Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+-   [Robust background job processing](https://laravel.com/docs/queues).
+-   [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
@@ -35,19 +35,19 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+-   **[Vehikl](https://vehikl.com/)**
+-   **[Tighten Co.](https://tighten.co)**
+-   **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+-   **[64 Robots](https://64robots.com)**
+-   **[Cubet Techno Labs](https://cubettech.com)**
+-   **[Cyber-Duck](https://cyber-duck.co.uk)**
+-   **[Many](https://www.many.co.uk)**
+-   **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
+-   **[DevSquad](https://devsquad.com)**
+-   **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
+-   **[OP.GG](https://op.gg)**
+-   **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
+-   **[Lendio](https://lendio.com)**
 
 ## Contributing
 
@@ -64,3 +64,75 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Deploying Laravel Project with Filament Dashboard
+
+This guide outlines the steps to deploy my Laravel project with a Filament dashboard on your server.
+
+## Prepare Server Environment
+
+Ensure your server meets the Laravel server requirements, such as PHP, Composer, and a web server (Apache or Nginx).
+Set up a database for your project on the server.
+
+## Upload Project Files
+
+Upload your Laravel project files to the server using FTP, SCP, or any preferred method.
+Include the .env file and run php artisan key:generate on the server to generate the application key.
+
+## Install Dependencies
+
+-   Connect to your server via SSH.
+
+-   Navigate to the project directory and run composer install to install the project's dependencies.
+
+-   Configure Web Server
+
+-   Configure your web server (Apache or Nginx) to serve the Laravel project.
+
+-   Set the document root to the public directory within your Laravel project.
+
+-   Configure Database
+
+-   Update the .env file on the server with the appropriate database connection details.
+
+-   Run Migrations and Seeders
+
+-   Run the database migrations to create the required tables:
+
+Copy code
+
+```php
+php artisan migrate
+```
+
+To seed database, run:
+
+Copy code
+
+```php
+php artisan db:seed
+```
+
+-   Configure Filament Dashboard
+
+-   Follow the steps mentioned earlier to configure and define your Filament dashboard, widgets, and routes.
+
+-   Configure Domain and SSL (Optional)
+
+-   If you have a custom domain, configure it to point to the server's IP address.
+
+-   Consider setting up SSL/TLS certificates for secure HTTPS access.
+
+-   Restart Web Server
+
+-   Restart your web server to apply the changes.
+
+-   Visit your domain or server IP address in a web browser to test your Laravel application and Filament dashboard.
+
+-   Monitor and Maintain
+
+-   Regularly monitor your server and application for smooth operation.
+
+-   Keep your Laravel project and Filament package updated to the latest versions.
+
+-   Feel free to customize and elaborate on each step based on your specific deployment process.
